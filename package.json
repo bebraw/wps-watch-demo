@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --trace-deprecation node_modules/.bin/wp --mode development",
+    "build": "wp --mode production"
   },
   "keywords": [],
   "author": "Juho Vepsäläinen",
@@ -14,6 +15,7 @@
     "webpack-nano": "^1.1.0"
   },
   "dependencies": {
-    "mini-html-webpack-plugin": "^3.1.0"
+    "mini-html-webpack-plugin": "^3.1.0",
+    "webpack-plugin-serve": "^1.1.0"
   }
 }
